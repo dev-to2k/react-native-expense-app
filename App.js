@@ -223,7 +223,7 @@ const MainNavigator = () => {
 
     initDatabase()
       .then(() => {
-        console.log("Database initialized!!!");
+        console.log("Database initialized!");
         setIsDatabaseInitialized(true);
       })
       .catch((error) => {

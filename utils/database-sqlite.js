@@ -52,11 +52,16 @@ export const fetchPlaces = async () => {
   const places = [];
   for (const place of result) {
     places.push(
-      new Place(place.id, place.title, place.imageUri, {
-        lat: place.latitude,
-        lng: place.longitude,
-        address: place.address,
-      })
+      new Place(
+        place.title,
+        place.imageUri,
+        {
+          lat: place.latitude,
+          lng: place.longitude,
+          address: place.address,
+        },
+        place.id
+      )
     );
   }
 
@@ -69,11 +74,16 @@ export const fetchPlaceDetails = async (placeId) => {
     placeId,
   ]);
 
-  const place = new Place(result.id, result.title, result.imageUri, {
-    address: result.address,
-    lat: result.latitude,
-    lng: result.longitude,
-  });
+  const place = new Place(
+    result.title,
+    result.imageUri,
+    {
+      address: result.address,
+      lat: result.latitude,
+      lng: result.longitude,
+    },
+    result.id
+  );
 
   return place;
 };

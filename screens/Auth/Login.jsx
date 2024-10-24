@@ -4,7 +4,7 @@ import AuthForm from "../../components/AuthForm";
 import LoadingOverlay from "../../components/UI/LoadingOverlay";
 import { GlobalStyles } from "../../constants/style";
 import { AuthContext } from "../../contexts/auth";
-import { login } from "../../utils/auth";
+import { login } from "../../utils/auth-http";
 
 const LoginScreen = ({ navigation }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);

@@ -16,7 +16,6 @@ const AllPlaces = ({ route }) => {
 
     if (isFocused) {
       loadPlaces();
-      // setPlaces((prevPlaces) => [...prevPlaces, route.params.place]);
     }
   }, [route, isFocused]);
 

@@ -4,7 +4,7 @@ import AuthForm from "../../components/AuthForm";
 import LoadingOverlay from "../../components/UI/LoadingOverlay";
 import { GlobalStyles } from "../../constants/style";
 import { AuthContext } from "../../contexts/auth";
-import { register } from "../../utils/auth";
+import { register } from "../../utils/auth-http";
 
 const RegisterScreen = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);

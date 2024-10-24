@@ -11,7 +11,7 @@ import {
 import { useEffect, useState } from "react";
 import { Alert, Image, StyleSheet, Text, View } from "react-native";
 import { GlobalStyles } from "../../constants/style";
-import { getAddress, getMapPreview } from "../../utils/location";
+import { getAddress, getMapPreview } from "../../utils/location-http";
 import CustomButton from "../UI/CustomButton";
 
 const LocationPicker = ({ onLocationPicked }) => {

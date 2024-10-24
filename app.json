@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "RNExpenseApp",
+    "name": "Expense Trung",
     "slug": "RNExpenseApp",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -12,13 +12,20 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": ["android.permission.RECORD_AUDIO"],
+      "package": "com.trung.rnexpenseapp",
+      "runtimeVersion": "1.0.0",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -30,6 +37,14 @@
           "cameraPermission": "The app accesses your camera to let you share them with your friends."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "d806236c-e4b1-4cda-8c60-d7b3e9279837"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/d806236c-e4b1-4cda-8c60-d7b3e9279837"
+    }
   }
 }
